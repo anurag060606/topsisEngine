@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>TOPSIS Engine</title>
+</head>
+
+<body>
+    <main>
+        <div class="herosec">
+            <div class="herosectext">
+                <span class="myh1">Your Decision Engine.</span>
+                <span class="myh3">Decide <span class="highlight">Better</span>. <span class="highlight">Faster</span>.
+                    <span class="highlight">Fairer</span>.</span>
+                <span class="myh4">TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) is a
+                    multi-criteria decision-making method that ranks options based on how close they are to the ideal
+                    choice. It’s a simple, transparent way to make better decisions using data and mathematics.</span>
+                <button class="trytopsis" onclick="location.href='#implementationishere'">Try TOPSIS</button>
+            </div>
+            <div class="herosecfig">
+                <img src="assets\images\illustration.svg">
+            </div>
+        </div>
+        <div id="divider"></div>
+        <section class="methodology">
+            <div class="seperatingheadings myh2">TOPSIS Methodology</div>
+            <div class="methoboxes">
+                <div class="methobox">
+                    <div class="methoboxtop"></div>
+                    <div class="methoboxbot">
+                        <span class="stepfontsize">Step 1 : Calculating Normalized Matrix</span>
+                        <span class="stepdescfontsize">In the TOPSIS method, the first step is to normalize the decision
+                            matrix so that different criteria with varying units and scales can be compared fairly. This
+                            is done by dividing each value in the matrix by the square root of the sum of squares of all
+                            values in its column. The result is a unitless normalized matrix where each criterion
+                            contributes proportionally, allowing for meaningful multi-criteria analysis.</span>
+                    </div>
+                </div>
+                <div class="methobox">
+                    <div class="methoboxtop"></div>
+                    <div class="methoboxbot">
+                        <span class="stepfontsize">Step 2 : Defining Ideal Best and Worst Euclidean Distances</span>
+                        <span class="stepdescfontsize">Based on the impact parameter (+ for benefit , – for cost), the
+                            Ideal Best is chosen as the maximum value for benefit criteria and minimum for cost
+                            criteria. The Ideal Worst is the reverse. Using these, we calculate the Euclidean distance
+                            of each alternative from both ideal points to measure how close each is to the best and
+                            worst possible solutions.</span>
+                    </div>
+                </div>
+                <div class="methobox">
+                    <div class="methoboxtop"></div>
+                    <div class="methoboxbot">
+                        <span class="stepfontsize">Step 3 : Calculating TOPSIS Score for each option</span>
+                        <span class="stepdescfontsize">The TOPSIS score for each alternative is calculated by dividing
+                            its distance from the Ideal Worst by the total of its distances from both the Ideal Best and
+                            the Ideal Worst. This gives a value between 0 and 1, where a higher score indicates the
+                            alternative is closer to the ideal solution and thus more favorable.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="divider"></div>
+        <div class="seperatingheadings myh2" id="implementationishere">Implementation</div>
+        
+            <div class="implementationscreen">
+                <span class="myh4" style="margin-top: 3vh;">Enter the number of options and criteria you want to
+                    compare.
+                    Set the weight and impact of each criterion, input your data, and instantly get a ranked list of the
+                    best choices using the TOPSIS decision-making method.</span>
+                <div class="selectorcontainer">
+                    <div class="selectorlabel">Number of options: <input type="number"></div>
+                    <div class="selectorlabel">Number of criteria: <input type="number"> </div>
+                </div>
+                <div class="gridcontainer">
+                    <div class="grid">grid incoming please wait</div>
+                </div>
+                <div class="buttoncontainer">
+                    <button class="implebtn">Reset</button>
+                    <button class="implebtn">Topsis-ify</button>
+                </div>
+                <div class="result">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, facere. Adipisci tenetur aspernatur, velit dignissimos inventore maiores. Labore ex, nobis earum eius delectus fugit vitae aut sint amet reiciendis architecto corrupti dignissimos porro nulla est fugiat, praesentium similique! Perspiciatis atque, error quis officia asperiores veniam ex autem excepturi nulla perferendis aperiam fugit, deserunt ab, unde temporibus. Voluptatibus voluptatum optio sint fugiat sequi blanditiis esse temporibus veritatis eveniet, perspiciatis ullam rerum a, incidunt minus cupiditate tempore reiciendis recusandae fugit expedita in deserunt repellendus facere, molestias eligendi. Expedita tenetur ab consequatur doloribus tempore, voluptatem quasi deserunt nulla consequuntur, quas, modi laborum molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aperiam alias quasi, odio officia velit nostrum eius voluptate at tenetur autem perferendis libero asperiores saepe fuga exercitationem rem, quisquam rerum, quis molestias! Saepe, modi! Quas ipsam illum pariatur facere laudantium, ex, sed porro ipsa, exercitationem at unde dignissimos nesciunt vel consectetur! Quas eius corrupti quod aut libero, ad nisi natus perspiciatis, harum sequi ut est consequatur totam facilis magnam qui, voluptas laborum praesentium voluptate. Iusto aperiam qui magni non. Repudiandae architecto reiciendis sunt necessitatibus atque eos dolore dolorem quae odit, nihil odio vel provident id facilis nisi sapiente perspiciatis aspernatur quaerat enim. Expedita consequuntur eaque, odit suscipit nesciunt optio repellat unde maiores excepturi modi quas perspiciatis dolor ratione quibusdam, fugit quae exercitationem aspernatur. Earum sint harum, nihil iste consequatur porro velit eum vero laborum aperiam laudantium maiores vel, dicta sunt fugit quas corrupti ut veritatis sequi quisquam magnam in? Deleniti, quam, ullam, unde qui eos enim placeat at illum quisquam odio blanditiis eveniet? Repellat aliquid omnis deleniti rem eaque odio numquam quas asperiores repudiandae atque dolores quia eveniet ipsam nisi quis aliquam, laudantium animi quos! Sit alias nesciunt repellat natus. Placeat inventore magnam nostrum minus. Laborum eveniet tenetur blanditiis eius.</div>
+    </main>
+    <footer>
+        <div class="traffic">Traffic: <span style="color:#00FF99;">Low</span></div>
+        <div class="ender">Made by Anurag on Caffeine ☕</div>
+        <div class="socials">
+            <a href="https://github.com/anurag060606"><img src="./assets/images/icongithub.png" style="width: 4vh;"></a>
+            <a href="https://www.linkedin.com/in/anurag-sinha-251618327/"><img src="./assets/images/iconlinkedin.png" style="width: 4vh;""></a>
+            <a href="https://x.com/cadmium06"><img src="./assets/images/iconx.png" style="width:4vh;"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
